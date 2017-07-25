@@ -28,6 +28,15 @@
 			<Item Name="Durability Tank Cal Template.xls" Type="Document" URL="../Calibration UIs/Durability Tank/Durability Tank Cal Template.xls"/>
 			<Item Name="Durability Tank Cal UI.vi" Type="VI" URL="../Calibration UIs/Durability Tank/Durability Tank Cal UI.vi"/>
 		</Item>
+		<Item Name="Gas Rack" Type="Folder">
+			<Item Name="Gas Rack AI Read.vi" Type="VI" URL="../Calibration UIs/Gas Rack/Gas Rack AI Read.vi"/>
+			<Item Name="Gas Rack Cal Targets.ini" Type="Document" URL="../Calibration UIs/Gas Rack/Gas Rack Cal Targets.ini"/>
+			<Item Name="Gas Rack Cal Template.xls" Type="Document" URL="../Calibration UIs/Gas Rack/Gas Rack Cal Template.xls"/>
+			<Item Name="Gas Rack Cal UI.vi" Type="VI" URL="../Calibration UIs/Gas Rack/Gas Rack Cal UI.vi"/>
+			<Item Name="Gas Rack Channel Type Def (RIO).ctl" Type="VI" URL="../Type Defs/Gas Rack Channel Type Def (RIO).ctl"/>
+			<Item Name="Gas Rack Create Cal File Array (RIO).vi" Type="VI" URL="../Calibration UIs/Gas Rack/Gas Rack Create Cal File Array (RIO).vi"/>
+			<Item Name="Gas Rack Write Data.vi" Type="VI" URL="../Calibration UIs/Gas Rack/Gas Rack Write Data.vi"/>
+		</Item>
 		<Item Name="Netway" Type="Folder">
 			<Item Name="Cal Targets.ini" Type="Document" URL="../Calibration UIs/Netway/Cal Targets.ini"/>
 			<Item Name="Netway Cal Template.xls" Type="Document" URL="../Calibration UIs/Netway/Netway Cal Template.xls"/>
@@ -688,6 +697,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5C84F939-F361-4AC6-8D22-0E0EC72115D0}</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
+				<Property Name="Bld_version.minor" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Calibration Utility.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../LabVIEW/build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -695,11 +705,17 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../LabVIEW/build/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2DADDB68-CE70-418B-8052-B4232FD15FBF}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9856940C-980F-4EAA-8D76-369AF5F4BF79}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIB/CIB Cal UI.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal UI.vi</Property>
+				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[10].type" Type="Str">VI</Property>
+				<Property Name="Source[11].itemID" Type="Ref">/My Computer/App Config.ini</Property>
+				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Durability Tank/Durability Tank Cal UI.vi</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
@@ -711,23 +727,25 @@
 				<Property Name="Source[4].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[4].type" Type="Str">VI</Property>
 				<Property Name="Source[5].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[5].itemID" Type="Ref">/My Computer/App Config.ini</Property>
+				<Property Name="Source[5].itemID" Type="Ref">/My Computer/New Durability Tank/New Durability Tank Cal UI.vi</Property>
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/New Durability Tank/New Durability Tank Cal UI.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/New Durability Tank/New Durability Tank Cal Template.xls</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="Source[7].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[7].itemID" Type="Ref">/My Computer/New Durability Tank/New Durability Tank Cal Template.xls</Property>
+				<Property Name="Source[7].itemID" Type="Ref">/My Computer/New Durability Tank/New Cal Targets.ini</Property>
 				<Property Name="Source[7].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[8].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[8].itemID" Type="Ref">/My Computer/New Durability Tank/New Cal Targets.ini</Property>
+				<Property Name="Source[8].itemID" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal Targets.ini</Property>
 				<Property Name="Source[8].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">9</Property>
-				<Property Name="TgtF_companyName" Type="Str">Nexteer Automotive</Property>
+				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal Template.xls</Property>
+				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">12</Property>
+				<Property Name="TgtF_companyName" Type="Str">TI Automotive</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Calibration Utility</Property>
 				<Property Name="TgtF_internalName" Type="Str">Calibration Utility</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2012 Nexteer Automotive</Property>
 				<Property Name="TgtF_productName" Type="Str">Calibration Utility</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{F4233732-A050-4FD8-91C4-BB4656E500E5}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Calibration Utility.exe</Property>
@@ -760,20 +778,15 @@
 				<Property Name="Destination[5].tag" Type="Str">{6333DE7B-3DCE-408D-A873-9A057FFE99B9}</Property>
 				<Property Name="Destination[5].type" Type="Str">userFolder</Property>
 				<Property Name="Destination[5].unlock" Type="Bool">true</Property>
-				<Property Name="DestinationCount" Type="Int">6</Property>
-				<Property Name="DistPart[0].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[0].productID" Type="Str">{7176D097-03C8-44EC-81A4-1A506BF99B2F}</Property>
-				<Property Name="DistPart[0].productName" Type="Str">NI-DAQmx 9.8 Patch 1</Property>
-				<Property Name="DistPart[0].upgradeCode" Type="Str">{41A099B4-3199-4666-BF46-C8BB66279957}</Property>
-				<Property Name="DistPart[1].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[1].productID" Type="Str">{459982AB-7E96-44F0-982D-0A4B9B9D0263}</Property>
-				<Property Name="DistPart[1].productName" Type="Str">NI-DAQmx Core Runtime 9.8</Property>
-				<Property Name="DistPart[1].upgradeCode" Type="Str">{923C9CD5-A0D8-4147-9A8D-998780E30763}</Property>
-				<Property Name="DistPart[2].flavorID" Type="Str">_full_</Property>
-				<Property Name="DistPart[2].productID" Type="Str">{EA2DC598-B4E9-4044-B831-C37A4A9F9C6F}</Property>
-				<Property Name="DistPart[2].productName" Type="Str">NI-DAQmx MAX Configuration Support 9.8</Property>
-				<Property Name="DistPart[2].upgradeCode" Type="Str">{9856368A-ED47-4944-87BE-8EF3472AE39B}</Property>
-				<Property Name="DistPartCount" Type="Int">3</Property>
+				<Property Name="Destination[6].name" Type="Str">Gas Rack</Property>
+				<Property Name="Destination[6].parent" Type="Str">{6D0B5D91-3C7A-4683-A2F3-32462E3F160C}</Property>
+				<Property Name="Destination[6].tag" Type="Str">{E3020D25-6DAC-4B80-9604-88D4697950E8}</Property>
+				<Property Name="Destination[6].type" Type="Str">userFolder</Property>
+				<Property Name="Destination[7].name" Type="Str">New Durability Tank</Property>
+				<Property Name="Destination[7].parent" Type="Str">{6D0B5D91-3C7A-4683-A2F3-32462E3F160C}</Property>
+				<Property Name="Destination[7].tag" Type="Str">{F94C5C10-6B4A-4742-990F-51D8B3029CB5}</Property>
+				<Property Name="Destination[7].type" Type="Str">userFolder</Property>
+				<Property Name="DestinationCount" Type="Int">8</Property>
 				<Property Name="INST_author" Type="Str">Nexteer Automotive</Property>
 				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
 				<Property Name="INST_buildLocation" Type="Path">../LabVIEW/Installer</Property>
@@ -781,10 +794,10 @@
 				<Property Name="INST_buildSpecName" Type="Str">Calibration Utility Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{EC16C21C-AFBB-4FBC-8052-7F7C0BE492FB}</Property>
 				<Property Name="INST_productName" Type="Str">Calibration Utility</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.38</Property>
+				<Property Name="INST_productVersion" Type="Str">1.0.53</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">13018020</Property>
-				<Property Name="MSI_arpCompany" Type="Str">Nexteer Automotive</Property>
+				<Property Name="MSI_arpCompany" Type="Str">TI Automotive</Property>
 				<Property Name="MSI_distID" Type="Str">{7E5D3B3B-1802-4B86-9320-D70BC4CBFC48}</Property>
 				<Property Name="MSI_osCheck" Type="Int">0</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{4EBB9209-65D7-45DF-B38F-14F419ABF285}</Property>
@@ -811,13 +824,13 @@
 				<Property Name="Source[1].name" Type="Str">App Config.ini</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/App Config.ini</Property>
 				<Property Name="Source[1].type" Type="Str">File</Property>
-				<Property Name="Source[10].dest" Type="Str">{DB943F67-F305-40D8-9F72-4888A6132B74}</Property>
-				<Property Name="Source[10].name" Type="Str">nx-5000 Cal Template.xls</Property>
-				<Property Name="Source[10].tag" Type="Ref"></Property>
+				<Property Name="Source[10].dest" Type="Str">{F94C5C10-6B4A-4742-990F-51D8B3029CB5}</Property>
+				<Property Name="Source[10].name" Type="Str">New Cal Targets.ini</Property>
+				<Property Name="Source[10].tag" Type="Ref">/My Computer/New Durability Tank/New Cal Targets.ini</Property>
 				<Property Name="Source[10].type" Type="Str">File</Property>
-				<Property Name="Source[11].dest" Type="Str">{B0F3388A-4432-410E-8A94-59A90FB801DF}</Property>
-				<Property Name="Source[11].name" Type="Str">ZGW Cal Template.xls</Property>
-				<Property Name="Source[11].tag" Type="Ref">/My Computer/Netway/ZGW Cal Template.xls</Property>
+				<Property Name="Source[11].dest" Type="Str">{F94C5C10-6B4A-4742-990F-51D8B3029CB5}</Property>
+				<Property Name="Source[11].name" Type="Str">New Durability Tank Cal Template.xls</Property>
+				<Property Name="Source[11].tag" Type="Ref">/My Computer/New Durability Tank/New Durability Tank Cal Template.xls</Property>
 				<Property Name="Source[11].type" Type="Str">File</Property>
 				<Property Name="Source[2].dest" Type="Str">{73A6BE42-DDD4-4315-8239-4633424DCBEF}</Property>
 				<Property Name="Source[2].name" Type="Str">CIB Cal Template.xls</Property>
@@ -843,11 +856,15 @@
 				<Property Name="Source[7].name" Type="Str">Cal Targets.ini</Property>
 				<Property Name="Source[7].tag" Type="Ref">/My Computer/Durability Tank/Cal Targets.ini</Property>
 				<Property Name="Source[7].type" Type="Str">File</Property>
-				<Property Name="Source[9].dest" Type="Str">{DB943F67-F305-40D8-9F72-4888A6132B74}</Property>
-				<Property Name="Source[9].name" Type="Str">DAQ Rack Cal Template.xls</Property>
-				<Property Name="Source[9].tag" Type="Ref"></Property>
+				<Property Name="Source[8].dest" Type="Str">{E3020D25-6DAC-4B80-9604-88D4697950E8}</Property>
+				<Property Name="Source[8].name" Type="Str">Gas Rack Cal Targets.ini</Property>
+				<Property Name="Source[8].tag" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal Targets.ini</Property>
+				<Property Name="Source[8].type" Type="Str">File</Property>
+				<Property Name="Source[9].dest" Type="Str">{E3020D25-6DAC-4B80-9604-88D4697950E8}</Property>
+				<Property Name="Source[9].name" Type="Str">Gas Rack Cal Template.xls</Property>
+				<Property Name="Source[9].tag" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal Template.xls</Property>
 				<Property Name="Source[9].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">8</Property>
+				<Property Name="SourceCount" Type="Int">12</Property>
 			</Item>
 			<Item Name="Netway Installer" Type="Installer">
 				<Property Name="DistPart[0].flavorID" Type="Str">DefaultFull</Property>
