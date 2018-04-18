@@ -718,7 +718,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5C84F939-F361-4AC6-8D22-0E0EC72115D0}</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
-				<Property Name="Bld_version.minor" Type="Int">3</Property>
+				<Property Name="Bld_version.minor" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">Calibration Utility.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../LabVIEW/build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -726,7 +726,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../LabVIEW/build/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{558E1A19-02A6-43F3-AFA6-9772C284A378}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{946918FA-B569-4557-8FB3-E1A6EB915CD7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIB/CIB Cal UI.vi</Property>
