@@ -29,6 +29,7 @@
 			<Item Name="Durability Tank Cal UI.vi" Type="VI" URL="../Calibration UIs/Durability Tank/Durability Tank Cal UI.vi"/>
 		</Item>
 		<Item Name="Gas Rack" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Gas Rack AI Read.vi" Type="VI" URL="../Calibration UIs/Gas Rack/Gas Rack AI Read.vi"/>
 			<Item Name="Gas Rack Cal Targets.ini" Type="Document" URL="../Calibration UIs/Gas Rack/Gas Rack Cal Targets.ini"/>
 			<Item Name="Gas Rack Cal Template.xls" Type="Document" URL="../Calibration UIs/Gas Rack/Gas Rack Cal Template.xls"/>
@@ -718,7 +719,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5C84F939-F361-4AC6-8D22-0E0EC72115D0}</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
-				<Property Name="Bld_version.minor" Type="Int">4</Property>
+				<Property Name="Bld_version.minor" Type="Int">5</Property>
 				<Property Name="Destination[0].destName" Type="Str">Calibration Utility.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../LabVIEW/build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -726,17 +727,13 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../LabVIEW/build/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{946918FA-B569-4557-8FB3-E1A6EB915CD7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{EDF5572E-27D6-44DA-8B47-09A48CF5EE2F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIB/CIB Cal UI.vi</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[10].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[10].itemID" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal UI.vi</Property>
+				<Property Name="Source[10].itemID" Type="Ref">/My Computer/App Config.ini</Property>
 				<Property Name="Source[10].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[10].type" Type="Str">VI</Property>
-				<Property Name="Source[11].itemID" Type="Ref">/My Computer/App Config.ini</Property>
-				<Property Name="Source[11].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Durability Tank/Durability Tank Cal UI.vi</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
@@ -763,7 +760,7 @@
 				<Property Name="Source[9].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[9].itemID" Type="Ref">/My Computer/Gas Rack/Gas Rack Cal Template.xls</Property>
 				<Property Name="Source[9].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="SourceCount" Type="Int">12</Property>
+				<Property Name="SourceCount" Type="Int">11</Property>
 				<Property Name="TgtF_companyName" Type="Str">TI Automotive</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">Calibration Utility</Property>
 				<Property Name="TgtF_internalName" Type="Str">Calibration Utility</Property>
