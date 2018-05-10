@@ -19,6 +19,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="cDAQ Logger" Type="Folder">
+			<Item Name="cDAQ AI Read.vi" Type="VI" URL="../Calibration UIs/cDAQ Logger/cDAQ AI Read.vi"/>
+			<Item Name="cDAQ Cal Targets.ini" Type="Document" URL="../Calibration UIs/cDAQ Logger/cDAQ Cal Targets.ini"/>
+			<Item Name="cDAQ Cal Template.xls" Type="Document" URL="../Calibration UIs/cDAQ Logger/cDAQ Cal Template.xls"/>
+			<Item Name="cDAQ Cal UI.vi" Type="VI" URL="../Calibration UIs/cDAQ Logger/cDAQ Cal UI.vi"/>
+			<Item Name="cDAQ Create Cal File Array (RIO).vi" Type="VI" URL="../Calibration UIs/cDAQ Logger/cDAQ Create Cal File Array (RIO).vi"/>
+			<Item Name="cDAQ Targets Type Def.ctl" Type="VI" URL="../Type Defs/cDAQ Targets Type Def.ctl"/>
+			<Item Name="cDAQ Type Def (cDAQ).ctl" Type="VI" URL="../Type Defs/cDAQ Type Def (cDAQ).ctl"/>
+			<Item Name="cDAQ Write Data.vi" Type="VI" URL="../Calibration UIs/cDAQ Logger/cDAQ Write Data.vi"/>
+		</Item>
 		<Item Name="CIB" Type="Folder">
 			<Item Name="CIB Cal Template.xls" Type="Document" URL="../Calibration UIs/CIB/CIB Cal Template.xls"/>
 			<Item Name="CIB Cal UI.vi" Type="VI" URL="../Calibration UIs/CIB/CIB Cal UI.vi"/>
@@ -45,6 +55,7 @@
 			<Item Name="ZGW Cal Template.xls" Type="Document" URL="../Calibration UIs/Netway/ZGW Cal Template.xls"/>
 		</Item>
 		<Item Name="New Durability Tank" Type="Folder">
+			<Item Name="D2A_5V.vi" Type="VI" URL="../SubVIs/D2A_5V.vi"/>
 			<Item Name="New Cal Targets.ini" Type="Document" URL="../Calibration UIs/New Durability Tank/New Cal Targets.ini"/>
 			<Item Name="New Channel Type Def (RIO).ctl" Type="VI" URL="../Type Defs/New Channel Type Def (RIO).ctl"/>
 			<Item Name="New Create Cal File Array (RIO).vi" Type="VI" URL="../Calibration UIs/New Durability Tank/New Create Cal File Array (RIO).vi"/>
@@ -57,7 +68,6 @@
 		<Item Name="Calibration Utility.vi" Type="VI" URL="../Calibration Utility.vi"/>
 		<Item Name="Channel Type Def (RIO).ctl" Type="VI" URL="../Type Defs/Channel Type Def (RIO).ctl"/>
 		<Item Name="Create Cal File Array (RIO).vi" Type="VI" URL="../SubVIs/Create Cal File Array (RIO).vi"/>
-		<Item Name="D2A_5V.vi" Type="VI" URL="../SubVIs/D2A_5V.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -719,8 +729,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5C84F939-F361-4AC6-8D22-0E0EC72115D0}</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
-				<Property Name="Bld_version.minor" Type="Int">5</Property>
-				<Property Name="Bld_version.patch" Type="Int">1</Property>
+				<Property Name="Bld_version.minor" Type="Int">6</Property>
 				<Property Name="Destination[0].destName" Type="Str">Calibration Utility.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../LabVIEW/build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -728,7 +737,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../LabVIEW/build/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{3578B29E-2A16-4675-81B3-1F92986B643C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2FC24157-BED2-463F-A270-73B0C473E1A2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIB/CIB Cal UI.vi</Property>
