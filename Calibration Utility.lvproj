@@ -10,6 +10,7 @@
 		<Property Name="IOScan.Priority" Type="UInt">9</Property>
 		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
 		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
+		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -38,6 +39,22 @@
 			<Item Name="Durability Tank Cal Template.xls" Type="Document" URL="../Calibration UIs/Durability Tank/Durability Tank Cal Template.xls"/>
 			<Item Name="Durability Tank Cal UI.vi" Type="VI" URL="../Calibration UIs/Durability Tank/Durability Tank Cal UI.vi"/>
 		</Item>
+		<Item Name="Excel" Type="Folder">
+			<Item Name="Create Excel from Hidden.vi" Type="VI" URL="../Excel/Create Excel from Hidden.vi"/>
+			<Item Name="Excel Add Printable Stat Lines.vi" Type="VI" URL="../Excel/Excel Add Printable Stat Lines.vi"/>
+			<Item Name="Excel Create Printable Sheet.vi" Type="VI" URL="../Excel/Excel Create Printable Sheet.vi"/>
+			<Item Name="Excel Handle Headers for Printable.vi" Type="VI" URL="../Excel/Excel Handle Headers for Printable.vi"/>
+			<Item Name="Excel Open File.vi" Type="VI" URL="../Excel/Excel Open File.vi"/>
+			<Item Name="Excel Open Worksheet.vi" Type="VI" URL="../Excel/Excel Open Worksheet.vi"/>
+			<Item Name="Excel Parse Page Info.vi" Type="VI" URL="../Excel/Excel Parse Page Info.vi"/>
+			<Item Name="Excel Protect Worksheets.vi" Type="VI" URL="../Excel/Excel Protect Worksheets.vi"/>
+			<Item Name="Excel Secondary Header Prep.vi" Type="VI" URL="../Excel/Excel Secondary Header Prep.vi"/>
+			<Item Name="Excel Stat Division Lines.vi" Type="VI" URL="../Excel/Excel Stat Division Lines.vi"/>
+			<Item Name="Excel Write Full Data Set.vi" Type="VI" URL="../Excel/Excel Write Full Data Set.vi"/>
+			<Item Name="Excel Write Headers.vi" Type="VI" URL="../Excel/Excel Write Headers.vi"/>
+			<Item Name="Excel Write Profile.vi" Type="VI" URL="../Excel/Excel Write Profile.vi"/>
+			<Item Name="Read Full Excel Sheet.vi" Type="VI" URL="../Excel/Read Full Excel Sheet.vi"/>
+		</Item>
 		<Item Name="Gas Rack" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Gas Rack AI Read.vi" Type="VI" URL="../Calibration UIs/Gas Rack/Gas Rack AI Read.vi"/>
@@ -64,10 +81,32 @@
 			<Item Name="New Durability Tank Cal UI.vi" Type="VI" URL="../Calibration UIs/New Durability Tank/New Durability Tank Cal UI.vi"/>
 			<Item Name="New Write DAQ Rack Data.vi" Type="VI" URL="../Calibration UIs/New Durability Tank/New Write DAQ Rack Data.vi"/>
 		</Item>
+		<Item Name="Machine Cal" Type="Folder">
+			<Item Name="Machine Cal UI.vi" Type="VI" URL="../Calibration UIs/New Durability Tank/Machine Cal UI.vi"/>
+			<Item Name="Remove Commas from Data.vi" Type="VI" URL="../Calibration UIs/Machine Cal/Remove Commas from Data.vi"/>
+			<Item Name="WebDAV transfer.vi" Type="VI" URL="../Calibration UIs/Machine Cal/WebDAV transfer.vi"/>
+			<Item Name="Simple CSV.vi" Type="VI" URL="../Calibration UIs/Machine Cal/Simple CSV.vi"/>
+			<Item Name="Parse Setup file.vi" Type="VI" URL="../Calibration UIs/Machine Cal/Parse Setup file.vi"/>
+			<Item Name="Parse RIO cal file.vi" Type="VI" URL="../Calibration UIs/Machine Cal/Parse RIO cal file.vi"/>
+			<Item Name="Restore Commas to Data.vi" Type="VI" URL="../Calibration UIs/Machine Cal/Restore Commas to Data.vi"/>
+			<Item Name="Read App Config_Machine.vi" Type="VI" URL="../SubVIs/Read App Config_Machine.vi"/>
+			<Item Name="Calibration Certificate Template.xlsx" Type="Document" URL="../Calibration Certificate Template.xlsx"/>
+			<Item Name="Machine Styles.ctl" Type="VI" URL="../../../Calibration Utility/Source/Type Defs/Machine Styles.ctl"/>
+		</Item>
 		<Item Name="App Config.ini" Type="Document" URL="../App Config.ini"/>
 		<Item Name="Calibration Utility.vi" Type="VI" URL="../Calibration Utility.vi"/>
 		<Item Name="Channel Type Def (RIO).ctl" Type="VI" URL="../Type Defs/Channel Type Def (RIO).ctl"/>
 		<Item Name="Create Cal File Array (RIO).vi" Type="VI" URL="../SubVIs/Create Cal File Array (RIO).vi"/>
+		<Item Name="Excel___Write System Information.vi" Type="VI" URL="../Excel/Excel___Write System Information.vi"/>
+		<Item Name="Table Control_2D.vi" Type="VI" URL="../SubVIs/Table Control_2D.vi"/>
+		<Item Name="Table handling DEBUG.vi" Type="VI" URL="../SubVIs/Table handling DEBUG.vi"/>
+		<Item Name="Table Control_1D.vi" Type="VI" URL="../SubVIs/Table Control_1D.vi"/>
+		<Item Name="Registered Machines.ctl" Type="VI" URL="../Type Defs/Registered Machines.ctl"/>
+		<Item Name="Checkbox Display.vi" Type="VI" URL="../SubVIs/Checkbox Display.vi"/>
+		<Item Name="Color Tracking Table.vi" Type="VI" URL="../SubVIs/Color Tracking Table.vi"/>
+		<Item Name="Machine Cal Data Engine.vi" Type="VI" URL="../SubVIs/Machine Cal Data Engine.vi"/>
+		<Item Name="Machine Cal Data Engine (global).vi" Type="VI" URL="../SubVIs/Machine Cal Data Engine (global).vi"/>
+		<Item Name="Take Reading.vi" Type="VI" URL="../Calibration UIs/Machine Cal/Take Reading.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array of VData to VArray__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VArray__ogtk.vi"/>
@@ -611,6 +650,15 @@
 				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
 				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
 				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
+				<Item Name="Set Cursor (Icon Pict).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Icon Pict).vi"/>
+				<Item Name="Set Cursor (Cursor ID).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor (Cursor ID).vi"/>
+				<Item Name="Set Cursor.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Cursor.vi"/>
+				<Item Name="Set Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Set Busy.vi"/>
+				<Item Name="Unset Busy.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/cursorutil.llb/Unset Busy.vi"/>
+				<Item Name="lveventtype.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/lveventtype.ctl"/>
+				<Item Name="NI_WebDAV.lvlib" Type="Library" URL="/&lt;vilib&gt;/WebDAVClient/NI_WebDAV.lvlib"/>
+				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
+				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
 			</Item>
 			<Item Name="_ke2000 Default Instrument Setup.vi" Type="VI" URL="../Keithly DMM Driver/Keithly 2000 Support Files.llb/_ke2000 Default Instrument Setup.vi"/>
 			<Item Name="_ke2000 Parse ASCII Data.vi" Type="VI" URL="../Keithly DMM Driver/Keithly 2000 Support Files.llb/_ke2000 Parse ASCII Data.vi"/>
@@ -670,9 +718,6 @@
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="Open Office File.vi" Type="VI" URL="../SubVIs/Open Office File.vi"/>
 			<Item Name="Port Config.ctl" Type="VI" URL="../RS485/Port Config.ctl"/>
 			<Item Name="Rack Version Type Def.ctl" Type="VI" URL="../Type Defs/Rack Version Type Def.ctl"/>
@@ -713,6 +758,9 @@
 			<Item Name="Write Sheet2 Data.vi" Type="VI" URL="../SubVIs/Write Sheet2 Data.vi"/>
 			<Item Name="Write Sheet3 Data.vi" Type="VI" URL="../SubVIs/Write Sheet3 Data.vi"/>
 			<Item Name="Write Sheet4 Data.vi" Type="VI" URL="../SubVIs/Write Sheet4 Data.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Calibration Utility" Type="EXE">
