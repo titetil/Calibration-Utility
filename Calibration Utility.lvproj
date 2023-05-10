@@ -833,8 +833,7 @@
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{5C84F939-F361-4AC6-8D22-0E0EC72115D0}</Property>
 				<Property Name="Bld_version.major" Type="Int">2</Property>
-				<Property Name="Bld_version.minor" Type="Int">6</Property>
-				<Property Name="Bld_version.patch" Type="Int">2</Property>
+				<Property Name="Bld_version.minor" Type="Int">8</Property>
 				<Property Name="Destination[0].destName" Type="Str">Calibration Utility.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../LabVIEW/build/NI_AB_PROJECTNAME.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -842,7 +841,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../LabVIEW/build/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E4AE6A8E-0B78-4B85-BF9B-965A6149710A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{C87C20BA-52DB-49F3-B55F-529764CEF0C2}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/CIB/CIB Cal UI.vi</Property>
@@ -925,6 +924,7 @@
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">Calibration Utility Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{EC16C21C-AFBB-4FBC-8052-7F7C0BE492FB}</Property>
+				<Property Name="INST_installerName" Type="Str">setup.exe</Property>
 				<Property Name="INST_productName" Type="Str">Calibration Utility</Property>
 				<Property Name="INST_productVersion" Type="Str">1.0.61</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
